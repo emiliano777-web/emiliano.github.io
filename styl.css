@@ -1,0 +1,107 @@
+/* Reset básico para márgenes y fuentes */
+￼ {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color: #f4f7f6;
+color: #333;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+padding: 20px;
+}
+/* Contenedor principal del formulario */
+form {
+background-color: #ffffff;
+padding: 30px 40px;
+border-radius: 10px;
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+width: 100%;
+max-width: 600px;
+}
+/* Título de la página */
+h1 {
+text-align: center;
+color: #2c3e50;
+margin-bottom: 25px;
+font-size: 1.8rem;
+}
+/* Estilo para cada contenedor de campo <p> */
+p {
+margin-bottom: 18px;
+display: flex;
+flex-direction: column;
+}
+/* Etiquetas generales */
+label {
+font-weight: 600;
+margin-bottom: 6px;
+color: #4a5568;
+font-size: 0.95rem;
+}
+/* Campos de texto, selección y área de texto */
+input[type="text"],
+select,
+textarea {
+width: 100%;
+padding: 10px 12px;
+border: 1px solid #cbd5e0;
+border-radius: 6px;
+font-size: 0.95rem;
+transition: border-color 0.2s ease, box-shadow 0.2s ease;
+outline: none;
+}
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+border-color: #3182ce;
+box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.2);
+}
+textarea {
+resize: vertical;
+min-height: 100px;
+}
+/* Ajustes específicos para radios y checkboxes */
+p:has(input[type="radio"]),
+p:has(input[type="checkbox"]) {
+flex-direction: row;
+align-items: center;
+flex-wrap: wrap;
+gap: 8px;
+}
+p:has(input[type="checkbox"]) label,
+p:has(input[type="radio"]) label {
+font-weight: normal;
+margin-bottom: 0;
+cursor: pointer;
+}
+input[type="radio"],
+input[type="checkbox"] {
+cursor: pointer;
+accent-color: #3182ce;
+width: 16px;
+height: 16px;
+}
+/* Botón de envío */
+input[type="submit"] {
+background-color: #3182ce;
+color: white;
+border: none;
+padding: 12px 20px;
+font-size: 1rem;
+font-weight: bold;
+border-radius: 6px;
+cursor: pointer;
+transition: background-color 0.2s ease, transform 0.1s ease;
+margin-top: 10px;
+}
+input[type="submit"]:hover {
+background-color: #2b6cb0;
+}
+input[type="submit"]:active {
+transform: scale(0.98);
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styl.css">
+</head>
+<body>
+    <h1>Formulario de registro</h1>
+
+    <form action="#" method="get">
+    <p>
+    <label for="nombre">Nombre:</label>
+    <input type="text" name="nombre" id="nombre" maxlength="50" required/>
+    </p>
+
+    <p>
+    <label for="apellidos">Apellidos:</label>
+    <input type="text" name="apellidos" id="apellidos" maxlength="50" />
+    </p>
+
+    <p>
+    Sexo: <input type="radio" name="sexo" id="sexo-h" value="h" />
+    <label for="sexo-h">hombre</label>
+    <input type="radio" name="sexo" id="sexo-m" value="m" />
+    <label for="sexo-m">mujer</label>
+    </p>
+
+    <p>
+    <label for="correo">Correo:</label>
+    <input type="text" name="correo" id="correo" maxlength="100" />
+    </p>
+
+    <p>
+    <label for="estado">Población:</label>
+    <select name="estado" id="estado">
+        <option value="Aguascalientes">Aguascalientes</option>
+        <option value="Baja California">Baja California</option>
+        <option value="Baja California Sur">Baja California Sur</option>
+        <option value="Campeche">Campeche</option>
+        <option value="Chiapas">Chiapas</option>
+        <option value="Chihuahua">Chihuahua</option>
+        <option value="Ciudad de México">Ciudad de México</option>
+        <option value="Coahuila">Coahuila</option>
+        <option value="Colima">Colima</option>
+        <option value="Durango">Durango</option>
+        <option value="Estado de México">Estado de México</option>
+        <option value="Guanajuato">Guanajuato</option>
+        <option value="Guerrero">Guerrero</option>
+        <option value="Hidalgo">Hidalgo</option>
+        <option value="Jalisco">Jalisco</option>
+        <option value="Michoacán">Michoacán</option>
+        <option value="Morelos">Morelos</option>
+        <option value="Nayarit">Nayarit</option>
+        <option value="Nuevo León">Nuevo León</option>
+        <option value="Oaxaca">Oaxaca</option>
+        <option value="Puebla">Puebla</option>
+        <option value="Querétaro">Querétaro</option>
+        <option value="Quintana Roo">Quintana Roo</option>
+        <option value="San Luis Potosí">San Luis Potosí</option>
+        <option value="Sinaloa">Sinaloa</option>
+        <option value="Sonora">Sonora</option>
+        <option value="Tabasco">Tabasco</option>
+        <option value="Tamaulipas">Tamaulipas</option>
+        <option value="Tlaxcala">Tlaxcala</option>
+        <option value="Veracruz">Veracruz</option>
+        <option value="Yucatán">Yucatán</option>
+        <option value="Zacatecas">Zacatecas</option>
+    </select>
+    </p>
+
+    <p><label for="descripcion">Descripción:</label>
+    <textarea name="descripcion" id="descripcion" rows="6" cols="60"></textarea>
+    </p>
+
+    <p>
+    <input type="checkbox" name="info" id="info" checked="checked" />
+    <label for="info">Deseo recibir información sobre novedades y ofertas</label>
+    </p>
+
+    <p>
+    <input type="checkbox" name="condiciones" id="condiciones" />
+    <label for="condiciones"> Declaro haber leído y aceptar las condiciones generales del programa y la normativa sobre protección de datos</label>
+    </p>
+
+    <p>
+    <input type="submit" value="Enviar" />
+    </p>
+    </form>
+
+    <script src="js/script2.js"></script>
+</body>
+</html>
